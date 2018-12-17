@@ -8,13 +8,21 @@
 <script>
 import NavBar from './components/NavBar'
 export default {
-  name: 'App',
-  components: {
-    NavBar
-  }
+  name: 'app',
 }
 </script>
 
-<style>
+<style scoped>
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
 
+* {
+    font-family: "San Francisco";
+}
 </style>
+
+
+
