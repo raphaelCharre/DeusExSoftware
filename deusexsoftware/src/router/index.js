@@ -32,6 +32,10 @@ export default new Router({
       path: '/contact',
       name: 'Contact',
       component: ContactPage
-    },
+    },{
+      path: '*',
+      name: 'Not found',
+      component: HomePage
+    }
   ]
 })
