@@ -38,6 +38,7 @@ export default {
 
 #navbar{
   background-color:rgba(30, 30, 30, 1);
+  z-index: 9999;
 }
 </style>
 

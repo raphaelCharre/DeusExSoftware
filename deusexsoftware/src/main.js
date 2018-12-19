@@ -8,6 +8,7 @@ import router from './router'
 import App from './App'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
+import ContactForm from './components/ContactForm'
 
 //Style
 import 'bootstrap/dist/css/bootstrap.css'
@@ -18,6 +19,7 @@ Vue.config.productionTip = false
 
 Vue.component('nav-bar', NavBar);
 Vue.component('app-footer', Footer);
+Vue.component('contact-form', ContactForm);
 
 new Vue({
   el: '#app',
