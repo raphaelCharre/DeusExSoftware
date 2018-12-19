@@ -1,8 +1,21 @@
 <template>
-    <div class="col-md-10 offset-md-1">
-        <h1 class="my-4 page-title">
-            Accueil
-        </h1>
+    <div class="page-padding">
+        <div class="bloc">
+            <h1 class="my-4 page-title">Services</h1>
+        </div>
+
+        <div class="bloc dark">
+            <h1 class="my-4 page-title">Services</h1>
+        </div>
+
+        <div class="bloc">
+            <h1 class="my-4 page-title">Services</h1>
+        </div>
+
+        <div class="bloc dark">
+            <h1 class="my-4 page-title">Services</h1>
+        </div>
+
     </div>
 </template>
 
@@ -13,5 +26,8 @@ export default {
 </script>
 
 <style scoped>
-
+    .bloc{
+        min-height: 500px;
+        padding: 20px;
+    }
 </style>

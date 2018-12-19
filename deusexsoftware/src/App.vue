@@ -2,19 +2,21 @@
   <div id="app">
     <nav-bar></nav-bar>
     <transition name="fade" mode="out-in">
-      <router-view class="page container-fluid"/>
+      <router-view id="main" class="page"/>
     </transition>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-import NavBar from './components/NavBar'
 export default {
   name: 'app',
 }
 </script>
 
 <style>
+
+
 @font-face {
   font-family: "San Francisco";
   font-weight: 400;
@@ -25,20 +27,44 @@ export default {
     font-family: "San Francisco";
 }
 
-.page{
-  margin-top: 70px;
-}
-
-.page-title{
-  text-align: center;
-  padding-left: 15px;
-}
-
 a{
   -webkit-transition:color 250ms ease-out;
   -moz-transition:color 250ms ease-out; 
   -o-transition:color 250ms ease-out;
   transition:color 250ms ease-out;
+}
+
+#app{
+  display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.page{
+  flex: 1;
+}
+
+.page-padding{
+  padding-top: 70px;
+}
+
+.dark{
+  background-color: rgba(50, 50, 50, 1);
+  color: white;
+}
+
+.page-dark hr{
+  display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid gray;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+.page-title{
+  text-align: center;
+  padding: 20px;
 }
 
 .router-link-exact-active{
@@ -57,17 +83,6 @@ a{
   opacity: 0;
 }
 
-.float-left{
-  float: left;
-}
-
-.float-right{
-  float: right;
-}
-
-.bg-black{
-  background-color: black;
-}
 </style>
 
 

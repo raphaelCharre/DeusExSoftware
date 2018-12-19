@@ -7,6 +7,7 @@ import router from './router'
 //Components
 import App from './App'
 import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 
 //Style
 import 'bootstrap/dist/css/bootstrap.css'
@@ -16,6 +17,7 @@ Vue.use(BootstrapVue);
 Vue.config.productionTip = false
 
 Vue.component('nav-bar', NavBar);
+Vue.component('app-footer', Footer);
 
 new Vue({
   el: '#app',

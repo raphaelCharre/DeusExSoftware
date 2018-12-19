@@ -1,5 +1,5 @@
 <template>
-    <div class="project" >
+    <div class="project container-fluid" >
         <p class="project-title">{{title}}</p>
         <div class="project-carousel" :class="[align_left? 'align-left': 'align-right']">
             <b-carousel id="carousel1"
