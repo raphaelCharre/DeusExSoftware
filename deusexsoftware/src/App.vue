@@ -49,17 +49,26 @@ a{
 }
 
 .dark{
-  background-color: rgba(50, 50, 50, 1);
+  background-color: rgba(40, 40, 40, 1);
   color: white;
 }
 
-.page-dark hr{
+.dark hr{
   display: block;
     height: 1px;
     border: 0;
     border-top: 1px solid gray;
     margin: 1em 0;
     padding: 0; 
+}
+
+.dark a{
+  color: rgba(255, 255, 255, .5);
+}
+
+.dark a:hover{
+  color: rgba(255, 255, 255, .75);
+  text-decoration: none;
 }
 
 .page-title{

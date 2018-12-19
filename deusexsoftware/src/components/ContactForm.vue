@@ -41,13 +41,21 @@
 <script>
 export default {
   name: "contact-form",
-  props: ['dark']
+  props: ['dark'],
+  data(){
+    return{
+        from : '',
+        to: '',
+        subject: '',
+        content: '' 
+    }
+  }
 };
 </script>
 
 <style scoped>
   #contact-container{
-        margin-top: 50px;
+        margin-top: 0px;
         padding: 50px 0px 100px 0px;
     }
 </style>

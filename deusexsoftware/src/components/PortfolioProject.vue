@@ -33,19 +33,19 @@ export default {
 <style scoped>
 
 .project{
-    padding: 0;
-    margin: 50px 0px;
+    padding: 20px 20px 50px 20px;
+    padding-bottom: 50px;
+    margin: 0px 0px 50px 0px;
 }
 
 .project-carousel{
     max-width: 60%;
     min-width: 290px;
-    padding: 0;
+    padding: 0px;
 }
 
 .project-carousel.align-left{
     float: left;
-    margin: 0px;
     margin: 5px 20px 10px 0px;
 }
 
@@ -57,9 +57,14 @@ export default {
 .project-title{
     font-weight: bold;
     font-size: 2em;
-    margin: 10px 0px;
-    padding: 0;
+    margin: 10px 0px 0px 0px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    border-left: solid 2px black;
+}
 
+.dark .project-title{
+    border-left: solid 2px white;
 }
 
 .project-description{

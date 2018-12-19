@@ -1,10 +1,9 @@
 <template>
     <div class="page-padding">
         <div class="col-md-10 offset-md-1">
-            <h1 class="my-4 page-title">
+            <h1 class="my-2 page-title">
                 Contact
             </h1>
-            <hr>
         </div>
         <contact-form :dark="true"></contact-form>
     </div>
@@ -12,15 +11,6 @@
 
 <script>
 export default {
-    data(){
-        return{
-           from : '',
-           to: '',
-           subject: '',
-           content: '' 
-        }
-    }
-    
 }
 </script>
 
