@@ -10,6 +10,10 @@ import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import ContactForm from './components/ContactForm'
 
+//Data
+import projects from './assets/data/projects.json'
+import founders from './assets/data/founders.json'
+
 //Style
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -20,6 +24,9 @@ Vue.config.productionTip = false
 Vue.component('nav-bar', NavBar);
 Vue.component('app-footer', Footer);
 Vue.component('contact-form', ContactForm);
+
+Vue.prototype.getProjects = ()=>projects;
+Vue.prototype.getFounders = ()=>founders;
 
 new Vue({
   el: '#app',

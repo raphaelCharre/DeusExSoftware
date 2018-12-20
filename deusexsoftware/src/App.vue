@@ -16,7 +16,6 @@ export default {
 
 <style>
 
-
 @font-face {
   font-family: "San Francisco";
   font-weight: 400;
@@ -28,10 +27,14 @@ export default {
 }
 
 a{
-  -webkit-transition:color 250ms ease-out;
-  -moz-transition:color 250ms ease-out; 
-  -o-transition:color 250ms ease-out;
-  transition:color 250ms ease-out;
+  -webkit-transition:all 250ms ease-out;
+  -moz-transition:all 250ms ease-out; 
+  -o-transition:all 250ms ease-out;
+  transition:all 250ms ease-out;
+}
+
+a:hover{
+  text-decoration: none;
 }
 
 #app{
@@ -63,12 +66,22 @@ a{
 }
 
 .dark a{
+  opacity: .5;
   color: rgba(255, 255, 255, .5);
+  
 }
 
 .dark a:hover{
-  color: rgba(255, 255, 255, .75);
-  text-decoration: none;
+  opacity: .75;
+}
+
+.text-blue,a.text-blue{
+  color: #007bff;
+  opacity: 1;
+}
+
+a.text-blue:hover{
+  opacity: .75;
 }
 
 .page-title{
